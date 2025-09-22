@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Gcal Weekend Highlighter",
+  "version": "1.0.0",
+  "description": "Highlights weekends in Google Calendar.",
+  "content_scripts": [
+    {
+      "matches": ["https://calendar.google.com/*"],   
+      "js": ["main.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [],
+  "host_permissions": ["https://calendar.google.com/*"]
+}
