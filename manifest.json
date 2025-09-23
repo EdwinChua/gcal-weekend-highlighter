@@ -3,6 +3,7 @@
   "name": "Gcal Weekend Highlighter",
   "version": "1.0.0",
   "description": "Highlights weekends in Google Calendar. Repo at https://github.com/EdwinChua/gcal-date-highlighter",
+  "icons": { "128": "icon.png" },
   "content_scripts": [
     {
       "matches": ["https://calendar.google.com/*"],
@@ -10,6 +11,5 @@
       "run_at": "document_idle"
     }
   ],
-  "permissions": [],
-  "host_permissions": ["https://calendar.google.com/*"]
+  "permissions": []
 }
