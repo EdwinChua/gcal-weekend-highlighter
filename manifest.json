@@ -5,8 +5,8 @@
   "description": "Highlights weekends in Google Calendar. Repo at https://github.com/EdwinChua/gcal-date-highlighter",
   "content_scripts": [
     {
-      "matches": ["https://calendar.google.com/*"],   
-      "js": ["main.js"],
+      "matches": ["https://calendar.google.com/*"],
+      "js": ["constants.js","utils.js","theme-watcher.js","weekend-highlighter.js","main.js"],
       "run_at": "document_idle"
     }
   ],
